@@ -78,11 +78,14 @@ span {
 	display: none;
 }
 
+.page-content {
+	margin-bottom: 60px;
+}
+
 .sidebar,
 .main-content {
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 60px;
 }
 
 .sidebar {
@@ -199,12 +202,13 @@ span {
 	width: 204px;
 	padding: 41px 24px 48px;
 	margin-right: 12px;
+	border: 1px solid #fff;
 }
 
 .rates__item:hover {
 	border: 1px solid #ebecef;
 	border-radius: 7px;
-	transition-duration: ;
+	transition: .3s;
 }
 
 .rates__item:last-child {
