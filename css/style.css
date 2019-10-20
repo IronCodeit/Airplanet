@@ -85,16 +85,67 @@ span {
 .page-content--container {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 30px;
 }
 
 .page-content {
 	margin-bottom: 60px;
 }
 
+.page-block {
+	display: flex;
+}
+
 .sidebar {
 	width: 11%;
 	margin-right: 72px;
-	padding-top: 31px;
+}
+
+.main-page-text {
+	flex: 1;
+}
+
+.main-content {
+	flex: 1;
+}
+
+.breadcrumbs {
+	font-style: italic;
+	margin-bottom: 28px;
+}
+
+.breadcrumbs__list, .breadcrumbs__item {
+	display: flex;
+}
+
+.breadcrumbs__item:after {
+	content: "/";
+	display: block;
+	margin-left: 5px;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+	color: #221f1f;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.breadcrumbs__item--active:after {
+	display: none;
+}
+
+.breadcrumbs__item {
+	margin-right: 5px;
+}
+
+.breadcrumbs__item:last-child {
+	margin-right: 0;
+}
+
+.breadcrumbs__link {
+	text-decoration: underline;
+	font-size: 14px;
+	color: #1c5bc3;
 }
 
 .nav__list {
@@ -115,7 +166,11 @@ span {
 	color: #000;
 }
 
-.nav__item--active .nav__link {
+.nav__item--active-main .nav__link {
+	color: #000;
+}
+
+.nav__item--active-reviews .nav__link {
 	color: #000;
 }
 
@@ -130,6 +185,10 @@ span {
 
 .nav__link--icon--main:before {
 	background-image: url(../img/main_icon.png);
+}
+
+.nav__link--icon--main-blue:before {
+	background-image: url(../img/main_icon-blue.png);
 }
 
 .nav__link--icon--feed:before {
@@ -152,10 +211,6 @@ span {
 	display: block;
 }
 
-.main-content {
-	flex: 1;
-}
-
 .air {
 	margin-bottom: 8px;
 }
@@ -168,6 +223,10 @@ span {
 	letter-spacing: -0.3px;
 }
 
+.tittle--reviews {
+	margin-bottom: 49px;
+}
+
 .tittle--top {
 	margin-bottom: 27px;
 }
@@ -175,6 +234,18 @@ span {
 .tittle--bottom {
 	margin-bottom: 71px;
 	letter-spacing: -0.1px;
+}
+
+.reviews-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.reviews-list__item {
+	display: flex;
+	margin-bottom: 27px;
+	padding-bottom: 24px;
+	border-bottom: 2px solid #f5f5f5;
 }
 
 .rates {
@@ -316,6 +387,36 @@ span {
 
 .last-news {
 	margin-bottom: 28px;
+}
+
+.reviews-list__item--img .last-news__pic {
+	filter: grayscale(100%);
+	opacity: 0.2;
+}
+
+.reviews-list__disc {
+	max-width: 696px;
+}
+
+
+.reviews-list__disc div {
+	color: #b5b5b5;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.reviews-list__disc h4 {
+	font-weight: 700;
+	margin-bottom: 11px;
+	letter-spacing: 1.1px;
+}
+
+.reviews-list__disc p {
+	line-height: 30px;
+}
+
+.reviews-list__item:last-child {
+	border-bottom: none;
 }
 
 .pagination {
