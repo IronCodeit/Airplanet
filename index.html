@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>First</title>
+	<title>Main page</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container header__container">
-				<a href="https://www.airlines-inform.ru/" target="_blank" class="logo">
+				<a href="index.html" target="_blank" class="logo">
 					<img src="img/logo_header.png" alt="Airlines" class="logo__pic">
 				</a>
-				<div class="contacts">
+				<address class="contacts">
 					<a href="tel:+88000039210" class="contacts__phone">8 (800) 00-392-10</a>
 					<nav class="contacts__hours">
 						<ul class="contacts__list">График работы
@@ -21,19 +22,19 @@
 							<li class="contacts__item">обед: 14:00-14:30</li>
 						</ul>
 					</nav>
-				</div>
+				</address>
 			</div>
 		</header>
 		<div class="page-content">
-			<div class="container">
+			<div class="container page-content--container">
 				<aside class="sidebar">
 					<nav class="nav">
 						<ul class="nav__list">
-							<li class="nav__item nav__item--active">
-								<a href="#" class="nav__link nav__link--icon--main">ГЛАВНАЯ</a>
+							<li class="nav__item nav__item--active-main">
+								<a href="index.html" target="_blank" class="nav__link nav__link--icon--main">ГЛАВНАЯ</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link nav__link--icon--feed">ОТЗЫВЫ</a>
+								<a href="reviews.html" target="_blank" class="nav__link nav__link--icon--feed">ОТЗЫВЫ</a>
 							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
@@ -41,7 +42,7 @@
 						</ul>
 					</nav>
 				</aside>
-				<main class="main-content">
+				<main class="main-page-text">
 					<div class="air">
 						<img src="img/Photo.jpg" alt="sky" class="air__airlines-img">
 					</div>
@@ -99,27 +100,33 @@
 						<h2 class="title tittle--bottom">Последние новости</h2>
 						<ul class="last-news__list">
 							<li class="last-news__item">
-								<img src="img/planeflying.jpg" alt="night flights" class="last-news__pic">
+								<div class="last-news__img">
+									<img src="img/planeflying.jpg" alt="night flights" class="last-news__pic">
+								</div>
 								<div class="last-news__disc">
-									<div class="last-news__date">12.10.2016</div>
-									<h4 class="last-news__subtitle">Ночные перелёты дешевле!</h4>
-									<p class="last-news__message">Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам.</p>
+									<div>12.10.2016</div>
+									<h4>Ночные перелёты дешевле!</h4>
+									<p>Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам.</p>
 								</div>
 							</li>
 							<li class="last-news__item">
-								<img src="img/travel.jpg" alt="travel" class="last-news__pic">
+								<div class="last-news__img">
+									<img src="img/travel.jpg" alt="travel" class="last-news__pic">
+								</div>
 								<div class="last-news__disc">
-									<div class="last-news__date">01.02.2016</div>
-									<h4 class="last-news__subtitle">Путешествие в Грузию стало доступнее.</h4>
-									<p class="last-news__message">Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!</p>
+									<div>01.02.2016</div>
+									<h4>Путешествие в Грузию стало доступнее.</h4>
+									<p>Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!</p>
 								</div>
 							</li>
 							<li class="last-news__item">
-								<img src="img/childticket.jpg" alt="children's flights" class="last-news__pic">
+								<div class="last-news__img">
+									<img src="img/childticket.jpg" alt="children's flights" class="last-news__pic">
+								</div>
 								<div class="last-news__disc">
-									<div class="last-news__date">22.12.2015</div>
-									<h4 class="last-news__subtitle">Детские авиабилеты доступны для бизнес-класса.</h4>
-									<p class="last-news__message">Путешествие на самолете с детьми - небольшое испытание для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, специальным питанием и другими услугами на борту лайнера.</p>
+									<div>22.12.2015</div>
+									<h4>Детские авиабилеты доступны для бизнес-класса.</h4>
+									<p>Путешествие на самолете с детьми - небольшое испытание для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, специальным питанием и другими услугами на борту лайнера.</p>
 								</div>
 							</li>
 						</ul>
