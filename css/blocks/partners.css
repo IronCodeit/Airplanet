@@ -1,0 +1,18 @@
+.partners__img {
+	width: 161px;
+	height: 64px;
+	display: block;
+	object-fit: contain;
+}
+
+.partners__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.partners__item {
+	padding: 30px;
+	flex: 0 1 240px;
+}
