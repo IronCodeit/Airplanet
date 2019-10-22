@@ -1,7 +1,31 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-bold_1-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold_1-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-light_1-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light_1-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic_1-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'roboto', Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 300;
+	font-style: normal;
 }
 
 * {
@@ -149,6 +173,99 @@ span {
 	color: #1c5bc3;
 }
 
+.crew {
+	margin-bottom: 50px;
+}
+
+.crew__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.crew__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 0 1 290px;
+	padding: 15px;
+}
+
+.crew__pic {
+	width: 160px;
+	height: 160px;
+	display: block;
+	border-radius: 50%;
+	object-fit: contain;
+	margin-bottom: 20px;
+	opacity: 0.4;
+}
+
+.crew__box {
+	width: 160px;
+	height: 160px;
+	display: block;
+	border-radius: 50%;
+	background-color: #4b73b5;
+	z-index: 1;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.crew__desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.crew__name {
+	margin-bottom: 7px;
+	color: #221f1f;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.crew__profession {
+	margin-bottom: 10px;
+	color: #4b73b5;
+	font-weight: 700;
+}
+
+.crew__box h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.crew__text {
+	text-align: center;
+	line-height: 21px;
+}
+
+.partners__img {
+	width: 161px;
+	height: 64px;
+	display: block;
+	object-fit: contain;
+}
+
+.partners__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.partners__item {
+	padding: 30px;
+	flex: 0 1 240px;
+}
+
 .nav__list {
 	flex-direction: column;
 }
@@ -167,11 +284,9 @@ span {
 	color: #000;
 }
 
-.nav__item--active-main .nav__link {
-	color: #000;
-}
-
-.nav__item--active-reviews .nav__link {
+.nav__item--active-main .nav__link,
+.nav__item--active-reviews .nav__link,
+.nav__item--active-crew .nav__link {
 	color: #000;
 }
 
@@ -196,8 +311,16 @@ span {
 	background-image: url(../img/feed_icon.png);
 }
 
+.nav__link--icon--feed-black:before {
+	background-image: url(../img/feed_icon-black.png);
+}
+
 .nav__link--icon--team:before {
 	background-image: url(../img/team_icon.png);
+}
+
+.nav__link--icon--team-black:before {
+	background-image: url(../img/team_icon-black.png);
 }
 
 .nav__item {
@@ -331,12 +454,13 @@ span {
 .rates__price {
 	color: #212121;
 	font-size: 54px;
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: -1.07px;
 }
 
 .cent {
 	font-size: 35px;
+	margin-right: 5px;
 }
 
 .last-news__list {
@@ -535,14 +659,20 @@ span {
 	margin-right: 0;
 }
 
-.form__part-input,
-.form__part-text {
+.form__part-input {
 	width: 100%;
-	border: none;
 	border: 1px solid transparent;
 	padding: 15px 10px;
 	border-radius: 3px;
 	outline: none;
+}
+
+.form__part-text {
+	width: 100%;
+	outline: none;
+	border-radius: 3px;
+	border: 1px solid #4b73b5;
+	padding: 15px 10px;
 }
 
 .form__part-text {
@@ -623,6 +753,50 @@ span {
 
 .form__buttons button:hover::after {
 	background: url(../img/main_icon-blue.png) right center no-repeat;
+}
+
+.select__radio {
+	display: none;
+}
+
+.select {
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.fake {
+	width: 20px;
+	height: 20px;
+	display: block;
+	border: 1px solid #4b73b5;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.fake::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	display: block;
+	border-radius: 50%;
+	background-color: #4b73b5;
+	transform: translate(60%, 60%);
+	opacity: 0;
+}
+
+.select__radio:checked + .fake::before {
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
+.select__radio:checked .text {
+	color: #4b73b5;
+	transition-duration: 0.3s;
+}
+
+.form__select-tittle {
+	margin-bottom: 7px;
 }
 
 .footer {
