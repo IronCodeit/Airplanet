@@ -1,4 +1,4 @@
-.tech_support {
+.tech-support {
 	display: flex;
 	justify-content: center;
 	background: url(../img/fon.png) repeat #4bb56b;
@@ -8,17 +8,17 @@
 	margin-bottom: 60px;
 }
 
-.tech_support__info {
+.tech-support__info {
 	max-width: 650px;
 	font-size: 18px;
 }
 
-.tech_support__info a {
+.tech-support__info a {
 	color: #fff;
 	text-decoration: underline;
 }
 
-.tech_support a,
-.tech_support span {
+.tech-support a,
+.tech-support span {
 	font-weight: 700;
 }
