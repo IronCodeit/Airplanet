@@ -107,7 +107,7 @@
 	width: 15px;
 	height: 14px;
 	margin-left: 10px;
-	background: url(../img/button_pic.png) right center no-repeat;
+	background: url(../../img/button_pic.png) right center no-repeat;
 }
 
 .form__buttons button:hover {
@@ -117,7 +117,7 @@
 }
 
 .form__buttons button:hover::after {
-	background: url(../img/main_icon-blue.png) right center no-repeat;
+	background: url(../../img/main_icon-blue.png) right center no-repeat;
 }
 
 .select__radio {
