@@ -1,0 +1,24 @@
+.tech-support {
+	display: flex;
+	justify-content: center;
+	background: url(../img/fon.png) repeat #4bb56b;
+	padding: 30px 0;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.tech-support__info {
+	max-width: 650px;
+	font-size: 18px;
+}
+
+.tech-support__info a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.tech-support a,
+.tech-support span {
+	font-weight: 700;
+}

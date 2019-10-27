@@ -3,15 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Reviews</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container header__container">
-				<a href="https://www.airlines-inform.ru/" target="_blank" class="logo">
+				<a href="index.html" class="logo">
 					<img src="img/logo_header.png" alt="Airlines" class="logo__pic">
 				</a>
 				<address class="contacts">
@@ -32,13 +30,13 @@
 						<nav class="nav">
 							<ul class="nav__list">
 								<li class="nav__item">
-									<a href="#" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
+									<a href="index.html" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
 								</li>
 								<li class="nav__item nav__item--active-reviews">
-									<a href="#" class="nav__link nav__link--icon--feed">ОТЗЫВЫ</a>
+									<a href="reviews.html" class="nav__link nav__link--icon--feed-black">ОТЗЫВЫ</a>
 								</li>
 								<li class="nav__item">
-									<a href="#" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
+									<a href="crew.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
 								</li>
 							</ul>
 						</nav>
@@ -134,8 +132,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="tech_support">
-				<div class="tech_support__info">
+			<div class="tech-support">
+				<div class="tech-support__info">
 					<div>Вопросы по бронированию билетов в нашей авиакомпании принимаются.</div>
 					<div>Для этого можно оставить <a href="#">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки <span>8 (800) 00-392-10.</span></div>
 				</div>
@@ -143,7 +141,7 @@
 			<section class="form-section">
 				<div class="form">
 					<h2 class="form-tittle">Оставить отзыв</h2>
-					<form action="" class="form-block">
+					<form action="#" method="get" class="form-block">
 						<div class="form__row">
 							<label class="form__part">
 								<div class="form__part-tittle">Ваше имя</div>
@@ -165,12 +163,14 @@
 								<div class="form__select-tittle">Отображать фото в отзыве?</div>
 								<div class="form__select-options">
 									<label class="select">
-										<div class="select__radio"></div>
-										<div class="select__tittle">Да</div>
+										<input type="radio" name="radio button" class="select__radio">
+										<span class="fake"></span>
+										<span class="text">Да</span>
 									</label>
 									<label class="select">
-										<div class="select__radio"></div>
-										<div class="select__tittle">Нет</div>
+										<input type="radio" name="radio button" class="select__radio">
+										<span class="fake"></span>
+										<span class="text">Нет</span>
 									</label>
 								</div>
 							</div>

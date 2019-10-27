@@ -1,0 +1,76 @@
+.nav__list {
+	flex-direction: column;
+}
+
+.nav__link {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	color: #4b73b5;
+	letter-spacing: 2.4px;
+}
+
+.nav__link:hover {
+	color: #000;
+}
+
+.nav__item--active-main .nav__link,
+.nav__item--active-reviews .nav__link,
+.nav__item--active-crew .nav__link {
+	color: #000;
+}
+
+.nav__link:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 21px;
+	margin-right: 16px;
+	background: center center / contain no-repeat; 
+}
+
+.nav__link--icon--main:before {
+	background-image: url(../../img/main_icon.png);
+}
+
+.nav__link--icon--main-blue:before {
+	background-image: url(../../img/main_icon-blue.png);
+}
+
+.nav__link--icon--main-blue:hover:before {
+	background-image: url(../../img/main_icon.png);
+}
+
+.nav__link--icon--feed:before {
+	background-image: url(../../img/feed_icon.png);
+}
+
+.nav__link--icon--feed-black:before {
+	background-image: url(../../img/feed_icon-black.png);
+}
+
+.nav__link--icon--feed:hover:before {
+	background-image: url(../../img/feed_icon-black.png);
+}
+
+.nav__link--icon--team:before {
+	background-image: url(../../img/team_icon.png);
+}
+
+.nav__link--icon--team-black:before {
+	background-image: url(../../img/team_icon-black.png);
+}
+
+.nav__link--icon--team:hover:before {
+	background-image: url(../../img/team_icon-black.png);
+}
+
+.nav__item {
+	margin-bottom: 28px;
+}
+
+.nav__item:last-child {
+	margin-bottom: 0;
+}
