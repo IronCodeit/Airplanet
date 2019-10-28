@@ -28,7 +28,6 @@
 	width: 20px;
 	height: 21px;
 	margin-right: 16px;
-	background: center center / contain no-repeat; 
 }
 
 .nav__link--icon--main:before {
@@ -88,8 +87,63 @@
 	margin-right: 0;
 }
 
-.nav--horizontal .nav__link {
+.nav--horizontal .nav__link:before {
 	background-image: url(../../img/nav_sprites.png);
 }
 
+.nav--horizontal .nav__link--icon--main:before,
+.nav--horizontal .nav__link--icon--main-blue:before,
+.nav--horizontal .nav__link--icon--main-blue:hover:before {
+	width: 17px; 
+	height: 18px;
+}
 
+.nav--horizontal .nav__link--icon--main:before {
+	background-position: -10px -10px;
+}
+
+.nav--horizontal .nav__link--icon--main-blue:before {
+	background-position: -47px -10px;
+}
+
+.nav--horizontal .nav__link--icon--main-blue:hover:before {
+	background-position: -10px -10px;
+}
+
+.nav--horizontal .nav__link--icon--feed:before,
+.nav--horizontal .nav__link--icon--feed-black:before,
+.nav--horizontal .nav__link--icon--feed:hover:before {
+	width: 20px; 
+	height: 18px;
+}
+
+.nav--horizontal .nav__link--icon--feed:before {
+	background-position: -84px -10px;
+}
+
+.nav--horizontal .nav__link--icon--feed-black:before {
+	background-position: -124px -10px;
+}
+
+.nav--horizontal .nav__link--icon--feed:hover:before {
+	background-position: -124px -10px;
+}
+
+.nav--horizontal .nav__link--icon--team:before,
+.nav--horizontal .nav__link--icon--team-black:before,
+.nav--horizontal .nav__link--icon--team:hover:before {
+	width: 23px; 
+	height: 18px;
+}
+
+.nav--horizontal .nav__link--icon--team:before {
+	background-position: -164px -10px;
+}
+
+.nav--horizontal .nav__link--icon--team-black:before {
+	background-position: -207px -10px;
+}
+
+.nav--horizontal .nav__link--icon--team:hover:before {
+	background-position: -207px -10px;
+}
