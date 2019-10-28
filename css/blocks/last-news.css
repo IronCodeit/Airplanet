@@ -52,3 +52,37 @@
 .tittle--bottom {
 	margin-bottom: 71px;
 }
+
+.last-news__list--vertical {
+	flex-direction: row;
+}
+
+.last-news__list--vertical .last-news__item {
+	flex-direction: column;
+	width: 33%;
+	border-bottom: none;
+	margin-right: 20px;
+}
+
+.last-news__list--vertical .last-news__item:last-child {
+	margin-right: 0;
+}
+
+.last-news__list--vertical .last-news__img {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 45px;
+}
+
+.last-news__list--vertical h4 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21px;
+	letter-spacing: 0;
+}
+
+.last-news__list--vertical p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+}

@@ -14,12 +14,13 @@
 				</a>
 				<address class="contacts">
 					<a href="tel:+88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-					<nav class="contacts__hours">
-						<ul class="contacts__list">График работы
-							<li class="contacts__item">пн-вс: 09:00-20:00</li>
-							<li class="contacts__item">обед: 14:00-14:30</li>
-						</ul>
-					</nav>
+					<div class="contacts__times">
+						<a href="#" class="contacts__times-schedule">График работы</a>
+						<div class="contacts__dropdown">
+							<div class="contacts__days">пн-вс: 09:00-20:00</div>
+							<div class="contacts__dinner">обед: 14:00-14:30</div>
+						</div>
+					</div>
 				</address>
 			</div>
 		</header>
@@ -27,22 +28,37 @@
 			<div class="container page-content--container">
 				<div class="page-block">
 					<aside class="sidebar">
-						<nav class="nav">
-							<ul class="nav__list">
-								<li class="nav__item">
-									<a href="index.html" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
+						<div class="tech-support tech-support--blue">
+							<div class="tech-support__info">
+								<div>Вопросы по бронированию билетов в нашей авиакомпании принимаются.</div>
+								<div>Для этого можно оставить <a href="#">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки <span>8 (800) 00-392-10.</span></div>
+							</div>
+						</div>
+						<div class="socials socials--modiff">
+							<div class="socials__desk">
+								<p>Наши социальные сети</p>
+							</div>
+							<ul class="socials__list">
+								<li class="socials__item">
+									<a href="#" class="socials__link socials__link--icon--vk"></a>
 								</li>
-								<li class="nav__item nav__item--active-reviews">
-									<a href="reviews.html" class="nav__link nav__link--icon--feed-black">ОТЗЫВЫ</a>
+								<li class="socials__item">
+									<a href="#" class="socials__link socials__link--icon--fb"></a>
 								</li>
-								<li class="nav__item">
-									<a href="crew.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
+								<li class="socials__item">
+									<a href="#" class="socials__link socials__link--icon--gl"></a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link socials__link--icon--tw"></a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link socials__link--icon--gm"></a>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</aside>
 					<div class="main-content">
-						<nav class="breadcrumbs">
+						<nav class="breadcrumbs breadcrumbs--none">
 							<ul class="breadcrumbs__list">
 								<li class="breadcrumbs__item">
 									<a href="#" class="breadcrumbs__link">Главная</a>
@@ -53,6 +69,19 @@
 							</ul>
 						</nav>
 						<main class="main-page">
+							<nav class="nav nav--horizontal">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a href="index.html" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
+									</li>
+									<li class="nav__item nav__item--active-reviews">
+										<a href="reviews.html" class="nav__link nav__link--icon--feed-black">ОТЗЫВЫ</a>
+									</li>
+									<li class="nav__item">
+										<a href="crew.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
+									</li>
+								</ul>
+							</nav>
 							<section class="reviews">
 								<h2 class="title tittle--reviews">Отзывы</h2>
 								<ul class="reviews-list">
@@ -132,12 +161,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tech-support">
-				<div class="tech-support__info">
-					<div>Вопросы по бронированию билетов в нашей авиакомпании принимаются.</div>
-					<div>Для этого можно оставить <a href="#">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки <span>8 (800) 00-392-10.</span></div>
-				</div>
-			</div>
+			
 			<section class="form-section">
 				<div class="form">
 					<h2 class="form-tittle">Оставить отзыв</h2>
@@ -197,28 +221,6 @@
 				<a href="https://www.airlines-inform.ru/" target="_blank" class="logo">
 					<img src="img/logo_header.png" alt="Airlines" class="logo__pic">
 				</a>
-				<div class="socials">
-					<div class="socials__desk">
-						<p>Наши социальные сети</p>
-					</div>
-					<ul class="socials__list">
-						<li class="socials__item">
-							<a href="#" class="socials__link socials__link--icon--vk"></a>
-						</li>
-						<li class="socials__item">
-							<a href="#" class="socials__link socials__link--icon--fb"></a>
-						</li>
-						<li class="socials__item">
-							<a href="#" class="socials__link socials__link--icon--gl"></a>
-						</li>
-						<li class="socials__item">
-							<a href="#" class="socials__link socials__link--icon--tw"></a>
-						</li>
-						<li class="socials__item">
-							<a href="#" class="socials__link socials__link--icon--gm"></a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</footer>
 	</div>

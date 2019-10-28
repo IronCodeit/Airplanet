@@ -34,7 +34,7 @@ span {
 }
 
 .container {
-	width: 1080px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -61,12 +61,12 @@ span {
 }
 
 .sidebar {
-	width: 11%;
-	margin-right: 72px;
+	width: 24%;
+	margin-right: 25px;
 }
 
 .main-page-text {
-	flex: 1;
+	width: 74%;
 }
 
 .main-content {

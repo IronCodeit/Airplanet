@@ -106,7 +106,7 @@
 	display: block;
 	width: 15px;
 	height: 14px;
-	margin-left: 10px;
+	transform: translateX(6px);
 	background: url(../../img/button_pic.png) right center no-repeat;
 }
 

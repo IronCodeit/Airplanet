@@ -11,6 +11,7 @@
 .tech-support__info {
 	max-width: 650px;
 	font-size: 18px;
+	font-weight: 300;
 }
 
 .tech-support__info a {
@@ -21,4 +22,12 @@
 .tech-support a,
 .tech-support span {
 	font-weight: 700;
+}
+
+.tech-support--blue {
+	padding: 30px 15px;
+	background: url(../../img/fon-blue.png) repeat #4b73b5;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 30px;
 }

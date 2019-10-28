@@ -71,3 +71,11 @@
 	text-align: center;
 	line-height: 21px;
 }
+
+.crew__list--round .crew__pic {
+	border: 3px solid #4b73b5;
+}
+
+.crew__list--round .crew__profession, .crew__text {
+	font-size: 14px;
+}
