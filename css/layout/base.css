@@ -48,7 +48,6 @@ span {
 .page-content--container {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 30px;
 	margin-bottom: 50px;
 }
 

@@ -1,7 +1,10 @@
-.air__airlines-img {
-	display: block;
+.air__airlines-img {	
+	display: block;	
+	object-fit: cover;	
+	width: 100%;	
 }
 
 .air {
 	margin-bottom: 8px;
 }
+
