@@ -147,3 +147,11 @@
 .nav--horizontal .nav__link--icon--team:hover:before {
 	background-position: -207px -10px;
 }
+
+.nav--horizontal .nav__item {
+	margin-bottom: 0px;
+}
+
+.nav--horizontal {
+	margin-bottom: 28px;
+}
