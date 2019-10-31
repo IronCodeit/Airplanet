@@ -1,11 +1,10 @@
 .header {
 	background-color: #4b73b5;
 	margin-bottom: 25px;
-	height: 75px;
 }
 
 .header__container {
-	min-height: 75px;
+	height: 75px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

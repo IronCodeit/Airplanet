@@ -35,6 +35,12 @@
 	z-index: 1;
 	position: relative;
 	margin-bottom: 20px;
+	filter: grayscale(100%);
+}
+
+.crew__box:hover {
+	filter: grayscale(0%);
+	transition: 0.3s;
 }
 
 .crew__desc {

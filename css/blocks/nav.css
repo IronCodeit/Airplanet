@@ -27,7 +27,7 @@
 	display: block;
 	width: 20px;
 	height: 21px;
-	margin-right: 16px;
+	margin-right: 18px;
 }
 
 .nav__link--icon--main:before {
@@ -80,7 +80,7 @@
 }
 
 .nav--horizontal .nav__item {
-	margin-right: 90px;
+	margin-right: 91px;
 }
 
 .nav--horizontal .nav__item:last-child {
@@ -153,5 +153,5 @@
 }
 
 .nav--horizontal {
-	margin-bottom: 28px;
+	margin-bottom: 14px;
 }
