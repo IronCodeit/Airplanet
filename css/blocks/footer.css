@@ -54,15 +54,15 @@
 	transition-duration: .3s;
 }
 
-.socials__item:last-child {
-	margin-right: 0;
-}
-
 .socials__link {
 	display: block;
 	width: 20px;
 	height: 20px;
 	background: center center no-repeat;
+}
+
+.socials__item:last-child {
+	margin-right: 0;
 }
 
 .socials__link--icon--vk {
@@ -90,7 +90,7 @@
 }
 
 .socials--modiff .socials__item {
-	background-color: inherit;
+	//background-color: #d2def3;;
 }
 
 .socials--modiff .socials__link {
@@ -126,3 +126,6 @@
 	width: 12px; 
 	height: 9px;
 }
+
+
+
