@@ -1,88 +1,92 @@
 .last-news__list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .last-news__item {
-	display: flex;
-	padding-bottom: 24px;
-	border-bottom: 2px solid #f5f5f5;
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f5f5f5;
 }
 
 .last-news__item:last-child {
-	border-bottom: 0;
-	margin-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
 .last-news__pic {
-	max-width: 171px;
-	height: 171px;
-	border-radius: 50%;
-	object-fit: cover;
-	margin-right: 28px;
+    max-width: 171px;
+    height: 171px;
+    border-radius: 50%;
+    object-fit: cover;
+    //margin-right: 28px;
 }
 
 .last-news__disc {
-	display: flex;
-	flex-direction: column;
-	max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
 }
 
 .last-news__disc div {
-	color: #b5b5b5;
-	font-size: 14px;
-	margin-bottom: 4px;
+    color: #b5b5b5;
+    font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .last-news__disc h4 {
-	font-weight: 700;
-	margin-bottom: 7px;
-	letter-spacing: 1.1px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    letter-spacing: 1.1px;
 }
 
 .last-news__disc p {
-	line-height: 30px;
-}
-
-.last-news {
-	margin-bottom: 41px;
+    line-height: 30px;
 }
 
 .tittle--bottom {
-	margin-bottom: 36px;
+    margin-bottom: 36px;
 }
 
 .last-news__list--vertical {
-	flex-direction: row;
+    flex-direction: row;
 }
 
 .last-news__list--vertical .last-news__item {
-	flex-direction: column;
-	flex: 0 1 262px;
-	border-bottom: none;
-	padding-bottom: 0px;
-	margin-right: 34px;
+    flex-direction: column;
+    flex: 0 1 262px;
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-right: 34px;
 }
 
 .last-news__list--vertical .last-news__item:last-child {
+    margin-right: 0;
+}
+
+.last-news__list--vertical .last-news__pic {
 	margin-right: 0;
 }
 
 .last-news__list--vertical .last-news__img {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
 }
 
 .last-news__list--vertical h4 {
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 23px;
-	letter-spacing: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0;
 }
 
 .last-news__list--vertical p {
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.last-news {
+    margin-bottom: 41px;
 }

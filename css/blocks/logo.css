@@ -1,7 +1,7 @@
 .air__airlines-img {	
 	display: block;
-	width: 865px;
-	height: 299px;
+	max-width: 865px;
+	height: auto;
 }
 
 .air {

@@ -28,7 +28,7 @@
 
 .contacts__dropdown {
 	position: absolute;
-	right: 1000px;
+	right: -10000px;
 	opacity: 0;
 	width: 150px;
 	top: 100%;
@@ -39,6 +39,7 @@
 	box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
 	border-radius: 5px 0 5px 5px;
 	margin-top: 17px;
+	transition: opacity 0.4s;
 }
 
 .contacts__times:hover .contacts__dropdown {
