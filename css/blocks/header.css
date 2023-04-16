@@ -1,11 +1,11 @@
 .header {
-	background-color: #4b73b5;
-	margin-bottom: 11px;
+    background-color: #4b73b5;
+    margin-bottom: 25px;
 }
 
 .header__container {
-	min-height: 77px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

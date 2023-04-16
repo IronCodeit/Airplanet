@@ -1,52 +1,57 @@
 .reviews {
-	margin-bottom: 27px;
+    margin-bottom: 13px;
 }
 
 .reviews-list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews-list__item {
-	display: flex;
-	margin-bottom: 27px;
-	padding-bottom: 24px;
-	border-bottom: 2px solid #f5f5f5;
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e9ed;
+}
+
+.review__img {
+    margin-right: 28px;
+	flex-shrink: 0;
 }
 
 .reviews-list__item:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.reviews-list__item--img .last-news__pic {
-	filter: grayscale(100%);
-	opacity: 0.2;
+.reviews-list__item--img .avatar__pic {
+    filter: grayscale(100%);
+    opacity: 0.2;
 }
 
-.reviews-list__disc {
-	max-width: 696px;
+.review__disc {
+    width: 100%;
 }
 
-.reviews-list__disc div {
-	color: #b5b5b5;
-	font-size: 14px;
-	margin-bottom: 4px;
+.review__disc div {
+    color: #b5b5b5;
+    font-size: 14px;
+    margin-bottom: 9px;
 }
 
-.reviews-list__disc h4 {
-	font-weight: 700;
-	margin-bottom: 11px;
-	letter-spacing: 1.1px;
+.review__disc h4 {
+    font-weight: 700;
+    margin-bottom: 11px;
+    letter-spacing: 1.1px;
 }
 
-.reviews-list__disc p {
-	line-height: 30px;
+.review__disc p {
+    line-height: 30px;
 }
 
 .reviews-list__item:last-child {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 .tittle--reviews {
-	margin-bottom: 49px;
+    margin-bottom: 39px;
 }

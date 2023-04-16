@@ -4,7 +4,7 @@
 }
 
 .footer__container {
-	height: 77px;
+    padding: 14px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,7 +12,7 @@
 
 .footer__desc {
 	font-size: 14px;
-	width: 237px;
+	max-width: 237px;
 	line-height: 18px;
 }
 
@@ -22,38 +22,32 @@
 	text-decoration: underline;
 }
 
-.footer__desc p {
-	margin: 0;
-}
-
 .socials {
 	display: flex;
 	flex-direction: column;
 }
 
 .socials__desk {
-	margin-bottom: 7px;
+	margin-bottom: 9px;
 	font-size: 14px;
 	font-weight: 700;
 }
 
 .socials__list {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .socials__item {
-	margin-right: 10px;
+	margin-right: 23px;
 	border-radius: 50%;
 	background: #d2def3;
+	transition-duration: .25s;
 }
 
 .socials__item:hover {
 	background: #fff;
-	transition-duration: .3s;
-}
-
-.socials__item:last-child {
-	margin-right: 0;
 }
 
 .socials__link {
@@ -61,6 +55,10 @@
 	width: 20px;
 	height: 20px;
 	background: center center no-repeat;
+}
+
+.socials__item:last-child {
+	margin-right: 0;
 }
 
 .socials__link--icon--vk {
@@ -82,3 +80,52 @@
 .socials__link--icon--gm {
 	background-image: url(../../img/gm.png);
 }
+
+.socials--modiff {
+	align-items: center;
+}
+
+.socials--modiff .socials__item {
+    width: 22px;
+    height: 22px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials--modiff .socials__link {
+	background-image: url(../../img/css_sprite.png);
+}
+
+.socials--modiff .socials__link--icon--vk {
+	background-position: -99px -10px;
+	width: 12px; 
+	height: 7px;
+}
+
+.socials--modiff .socials__link--icon--fb {
+	background-position: -10px -10px;
+	width: 6px; 
+	height: 13px;
+}
+
+.socials--modiff .socials__link--icon--gl {
+	background-position: -131px -10px;
+	width: 15px; 
+	height: 9px;
+}
+
+.socials--modiff .socials__link--icon--tw {
+	background-position: -36px -10px;
+	width: 11px; 
+	height: 9px;
+}
+
+.socials--modiff .socials__link--icon--gm {
+	background-position: -67px -10px;
+	width: 12px; 
+	height: 9px;
+}
+
+
+

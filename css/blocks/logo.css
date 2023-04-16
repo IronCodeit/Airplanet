@@ -1,7 +1,12 @@
-.air__airlines-img {
+.air__airlines-img {	
 	display: block;
+	height: 100%;
+	width: 100%;
 }
 
 .air {
-	margin-bottom: 8px;
+	max-width: 865px;
+	margin-bottom: 10px;
+	object-fit: cover;
 }
+

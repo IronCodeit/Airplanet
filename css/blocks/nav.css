@@ -1,76 +1,126 @@
 .nav__list {
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .nav__link {
-	display: flex;
-	align-items: center;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 700;
-	color: #4b73b5;
-	letter-spacing: 2.4px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4b73b5;
+    letter-spacing: 2.4px;
+    transition: .4s;
 }
 
 .nav__link:hover {
-	color: #000;
+    color: #000;
 }
 
 .nav__item--active-main .nav__link,
 .nav__item--active-reviews .nav__link,
 .nav__item--active-crew .nav__link {
-	color: #000;
+    color: #000;
 }
 
 .nav__link:before {
-	content: "";
-	display: block;
-	width: 20px;
-	height: 21px;
-	margin-right: 16px;
-	background: center center / contain no-repeat; 
+    content: "";
+    display: block;
+    width: 23px;
+    height: 19px;
+    margin-right: 18px;
 }
 
-.nav__link--icon--main:before {
-	background-image: url(../../img/main_icon.png);
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 19px;
+    margin-right: 18px;
+}
+
+.nav__link--icon--main:before,
+.nav__link--icon--main-blue:hover:before {
+    background-image: url(../../img/main_icon.png);
 }
 
 .nav__link--icon--main-blue:before {
-	background-image: url(../../img/main_icon-blue.png);
-}
-
-.nav__link--icon--main-blue:hover:before {
-	background-image: url(../../img/main_icon.png);
+    background-image: url(../../img/main_icon-blue.png);
 }
 
 .nav__link--icon--feed:before {
-	background-image: url(../../img/feed_icon.png);
+    background-image: url(../../img/feed_icon.png);
 }
 
-.nav__link--icon--feed-black:before {
-	background-image: url(../../img/feed_icon-black.png);
-}
-
+.nav__link--icon--feed-black:before,
 .nav__link--icon--feed:hover:before {
-	background-image: url(../../img/feed_icon-black.png);
+    background-image: url(../../img/feed_icon-black.png);
 }
 
 .nav__link--icon--team:before {
-	background-image: url(../../img/team_icon.png);
+    background-image: url(../../img/team_icon.png);
 }
 
-.nav__link--icon--team-black:before {
-	background-image: url(../../img/team_icon-black.png);
-}
-
+.nav__link--icon--team-black:before,
 .nav__link--icon--team:hover:before {
-	background-image: url(../../img/team_icon-black.png);
+    background-image: url(../../img/team_icon-black.png);
 }
 
 .nav__item {
-	margin-bottom: 28px;
+    margin-bottom: 28px;
 }
 
 .nav__item:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+.nav--horizontal {
+    margin-bottom: 14px;
+}
+
+.nav--horizontal .nav__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav--horizontal .nav__item {
+    margin-right: 91px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.nav--horizontal .nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav--horizontal .nav__link:before {
+    background-image: url(../../img/nav_sprites.png);
+}
+
+.nav--horizontal .nav__link--icon--main:before,
+.nav--horizontal .nav__link--icon--main-blue:hover:before {
+    background-position: -10px -10px;
+}
+
+.nav--horizontal .nav__link--icon--main-blue:before {
+    background-position: -47px -10px;
+}
+
+.nav--horizontal .nav__link--icon--feed:before {
+    background-position: -84px -10px;
+}
+
+.nav--horizontal .nav__link--icon--feed-black:before,
+.nav--horizontal .nav__link--icon--feed:hover:before {
+    background-position: -124px -10px;
+}
+
+.nav--horizontal .nav__link--icon--team:before {
+    background-position: -164px -10px;
+}
+
+.nav--horizontal .nav__link--icon--team-black:before,
+.nav--horizontal .nav__link--icon--team:hover:before {
+    background-position: -207px -10px;
 }
