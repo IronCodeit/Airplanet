@@ -51,13 +51,13 @@
 	border: 10px solid transparent;
 	border-bottom-color: #fff;
 	border-top-width: 0px;
-	top: -10px;
+	bottom: 100%;
 	right: 0;
 }
 
 .contacts__dropdown:after {
 	height: 20px;
-	top: -20px;
+	bottom: 100%;
 	left: 0;
 	right: 0;
 }

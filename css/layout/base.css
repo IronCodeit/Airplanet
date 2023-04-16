@@ -4,8 +4,24 @@ body {
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
 * {
     box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 1100px;
+}
+
+.container {
+    /* padding: 10px; */
+    width: 1183px;
+    margin: 0 auto;
 }
 
 address {
@@ -25,21 +41,28 @@ ul li {
     list-style-type: none;
 }
 
-h1,
-h2,
-h4,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
 p {
     margin: 0;
 }
 
-span {
-    font-weight: 700;
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
-.container {
-    padding: 10px;
-    width: 1183px;
-    margin: 0 auto;
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+span {
+    font-weight: 700;
 }
 
 .title {
@@ -74,7 +97,7 @@ span {
 }
 
 .page-block .sidebar {
-    width: 283px;
+    max-width: 283px;
     margin-right: 15px;
 }
 
@@ -87,7 +110,7 @@ span {
 }
 
 .main-content {
-    width: 886px;
+    flex: 1;
 }
 
 .main-content--crew .crew {
@@ -96,4 +119,9 @@ span {
 
 .page-block .nav--horizontal {
     margin-bottom: 18px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }

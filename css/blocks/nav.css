@@ -10,7 +10,7 @@
     font-weight: 700;
     color: #4b73b5;
     letter-spacing: 2.4px;
-    transition: 0.4s;
+    transition: .4s;
 }
 
 .nav__link:hover {
@@ -24,6 +24,14 @@
 }
 
 .nav__link:before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 19px;
+    margin-right: 18px;
+}
+
+.nav__link:after {
     content: "";
     display: block;
     width: 23px;

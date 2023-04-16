@@ -4,7 +4,7 @@
 }
 
 .footer__container {
-	height: 75px;
+    padding: 14px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,7 +12,7 @@
 
 .footer__desc {
 	font-size: 14px;
-	width: 237px;
+	max-width: 237px;
 	line-height: 18px;
 }
 
@@ -43,7 +43,7 @@
 	margin-right: 23px;
 	border-radius: 50%;
 	background: #d2def3;
-	transition-duration: .3s;
+	transition-duration: .25s;
 }
 
 .socials__item:hover {

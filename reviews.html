@@ -61,38 +61,30 @@
 						</div>
 					</aside>
 					<div class="main-content">
-						<nav class="breadcrumbs breadcrumbs--none">
-							<ul class="breadcrumbs__list">
-								<li class="breadcrumbs__item">
-									<a href="#" class="breadcrumbs__link">Главная</a>
+						<nav class="nav nav--horizontal">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="main.html" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
 								</li>
-								<li class="breadcrumbs__item breadcrumbs__item--active">
-									<a href="#" class="breadcrumbs__link">Отзывы</a>
+								<li class="nav__item nav__item--active-reviews">
+									<a href="reviews.html" class="nav__link nav__link--icon--feed-black">ОТЗЫВЫ</a>
+								</li>
+								<li class="nav__item">
+									<a href="crew.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
 								</li>
 							</ul>
 						</nav>
 						<main class="main-page">
-							<nav class="nav nav--horizontal">
-								<ul class="nav__list">
-									<li class="nav__item">
-										<a href="main.html" class="nav__link nav__link--icon--main-blue">ГЛАВНАЯ</a>
-									</li>
-									<li class="nav__item nav__item--active-reviews">
-										<a href="reviews.html" class="nav__link nav__link--icon--feed-black">ОТЗЫВЫ</a>
-									</li>
-									<li class="nav__item">
-										<a href="crew.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
-									</li>
-								</ul>
-							</nav>
 							<section class="reviews">
 								<h2 class="title tittle--reviews">Отзывы</h2>
 								<ul class="reviews-list">
-									<li class="reviews-list__item">
-										<div class="reviews-list__img">
-											<img src="img/irina.png" alt="night flights" class="last-news__pic">
+									<li class="reviews-list__item review">
+										<div class="review__img">
+											<div class="avatar">
+												<img src="img/irina.png" alt="night flights" class="avatar__pic">
+											</div>
 										</div>
-										<div class="reviews-list__disc">
+										<div class="review__disc">
 											<div>12.10.2016</div>
 											<h4>Ирина Паламарчук</h4>
 											<p>Классный полет, трясло первые полчаса так, что я боялась отстегнуть
@@ -101,11 +93,13 @@
 												лететь с комфортом.</p>
 										</div>
 									</li>
-									<li class="reviews-list__item">
-										<div class="reviews-list__img">
-											<img src="img/Sasha.png" alt="night flights" class="last-news__pic">
+									<li class="reviews-list__item review">
+										<div class="review__img">
+											<div class="avatar">
+												<img src="img/Sasha.png" alt="night flights" class="avatar__pic">
+											</div>
 										</div>
-										<div class="reviews-list__disc">
+										<div class="review__disc">
 											<div>01.02.2016</div>
 											<h4>Александр Бельков</h4>
 											<p>Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали
@@ -113,11 +107,13 @@
 												места для ног, но с этим у меня часто проблема, рост 2,1м.</p>
 										</div>
 									</li>
-									<li class="reviews-list__item reviews-list__item--img">
-										<div class="reviews-list__img">
-											<img src="img/Igor.png" alt="night flights" class="last-news__pic">
+									<li class="reviews-list__item review reviews-list__item--img">
+										<div class="review__img">
+											<div class="avatar">
+												<img src="img/Igor.png" alt="night flights" class="avatar__pic">
+											</div>
 										</div>
-										<div class="reviews-list__disc">
+										<div class="review__disc">
 											<div>22.12.2015</div>
 											<h4>Игорь Николаенко</h4>
 											<p>Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5
@@ -126,11 +122,13 @@
 												бы бутерброды, чипсы какие-то или печенье.</p>
 										</div>
 									</li>
-									<li class="reviews-list__item">
-										<div class="reviews-list__img">
-											<img src="img/Nastya.png" alt="night flights" class="last-news__pic">
+									<li class="reviews-list__item review">
+										<div class="review__img">
+											<div class="avatar">
+												<img src="img/Nastya.png" alt="night flights" class="avatar__pic">
+											</div>
 										</div>
-										<div class="reviews-list__disc">
+										<div class="review__disc">
 											<div>14.08.2015</div>
 											<h4>Анастасия Порядная</h4>
 											<p>За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше
@@ -173,7 +171,7 @@
 							</div>
 							<section class="form-section">
 								<div class="form">
-									<h2 class="form-tittle">Оставить отзыв</h2>
+									<h2 class="title form-tittle">Оставить отзыв</h2>
 									<form action="#" method="get" class="form-block">
 										<div class="form__row">
 											<label class="form__part">
@@ -189,8 +187,7 @@
 										<div class="form__row">
 											<label class="form__part">
 												<div class="form__part-tittle">Текст отзыва</div>
-												<textarea class="form__part-text"
-													placeholder="Мне понравилось">
+												<textarea class="form__part-text" placeholder="Мне понравилось">
 												</textarea>
 											</label>
 										</div>
